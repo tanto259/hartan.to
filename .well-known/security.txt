@@ -1,0 +1,21 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+# hartan.to security.txt
+# Last Updated: Mon, 15 Feb 2021 01:30:00 +0800
+
+# RFC2142 mailboxes are also available to contact
+
+Contact: https://securitypuppy.com/contact
+Encryption: https://securitypuppy.com/.well-known/openpgpkey/EEB1D3AF8CF1C236.pub.asc
+Preferred-Languages: en, id
+Canonical: https://hartan.to/.well-known/security.txt
+
+Expires: Tue, 31 Dec 2030 23:59:59 +0800
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYIAB0WIQRcWEJUvOzTYapGixiRovm9ehfhzAUCYCldBgAKCRCRovm9ehfh
+zFReAP0dNj4lmfwdBxksy34wzi4UbbR77rWFV1p1ANm7Ei8FTQD8C6dMZaBdd9q+
+DIRyrH8z4+t+YZCzS72SbiG9dawqygc=
+=j1aa
+-----END PGP SIGNATURE-----
