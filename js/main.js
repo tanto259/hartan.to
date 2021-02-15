@@ -2,7 +2,7 @@ var list, index;
 list = document.getElementsByClassName("javascript-required");
 
 for (index = 0; index < list.length; ++index) {
-    list[index].style.setProperty('display', 'block', 'important');
+    list[index].style.setProperty('display', 'block');
 }
 
 function rot47(inputString) {
