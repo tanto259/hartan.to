@@ -1,47 +1,71 @@
-title: "Hartanto Ario Widjaya"
-description: "Student and Aspiring Mainframer"
-
-url: "https://hartan.to"
+title:        Hartanto Ario Widjaya
+description:  Student and Aspiring Mainframer
+url:          "https://hartan.to"
 
 markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
 
-resume_avatar:                  "true"
-resume_name:                    "Hartanto Ario Widjaya"
-resume_title:                   "Student and Aspiring Mainframer"
-resume_contact_email:           "96==@o92CE2?]E@"
-resume_header_intro: "<p>I'm a student from Singapore who is looking to explore career options in mainframe. Why? Because they are fun to explore with. Currently looking for opportunities in Singapore or Indonesia.</p>"
+resume:
+  avatar:             true
+  name:               Hartanto Ario Widjaya
+  title:              Student and Aspiring Mainframer
+  email:              "96==@o92CE2?]E@"
+  intro:              "<p>I'm a student from Singapore who is looking to explore career options in mainframe. Why? Because they are fun to explore with. Currently looking for opportunities in Singapore or Indonesia.</p>"
+  looking_for_work:   "yes"
 
-resume_looking_for_work:        "yes"
-
-resume_section_experience:      true
-resume_section_education:       true
-resume_section_projects:        false
-resume_section_skills:          true
-resume_section_recognition:     true
-resume_section_links:           true
-resume_section_associations:    true
-resume_section_credentials:     true
-resume_section_interests:       true
-resume_section_language:        true
+resume_section:
+  experience:      true
+  education:       true
+  projects:        false
+  skills:          true
+  recognition:     true
+  links:           true
+  associations:    true
+  credentials:     true
+  interests:       true
+  language:        true
 
 resume_social_links:
-  resume_github_url:            "https://github.com/tanto259"
-  resume_twitter_url:           "https://twitter.com/tanto259"
-  resume_linkedin_url:          "https://www.linkedin.com/in/hartantoariowidjaya"
-  resume_website_url:           "https://securitypuppy.com"
-  resume_facebook_url:          "https://www.facebook.com/tanto259"
-  resume_instagram_url:         "https://www.instagram.com/tanto259"
+  github:            https://github.com/tanto259
+  twitter:           https://twitter.com/tanto259
+  linkedin:          https://www.linkedin.com/in/hartantoariowidjaya
+  website:           https://securitypuppy.com
+  facebook:          https://www.facebook.com/tanto259
+  instagram:         https://www.instagram.com/tanto259
 resume_print_social_links:      true
 
 resume_theme:                   default
 
+author:
+  name:     Hartanto Ario Widjaya
+  twitter:  tanto259
+  picture:  "/images/avatar.jpg"
+
+twitter:
+  username: tanto259
+  card:     summary
+
+logo: "/images/avatar.jpg"
+
+social:
+  name: Hartanto Ario Widjaya
+  links:
+    - https://twitter.com/tanto259
+    - https://www.facebook.com/tanto259
+    - https://www.linkedin.com/in/hartantoariowidjaya
+    - https://www.instagram.com/tanto259
+    - https://github.com/tanto259
+    - https://securitypuppy.com
+
 webmaster_verifications:
   google: 8cZJ7K74aI81G83l-AG_7MegZmsRWMNe7rXrVlvrqo8
   yandex: e19915b37a81f438
-  bing: 0C8DA626DE53E04C6AF918B5FB85176E
+  bing:   0C8DA626DE53E04C6AF918B5FB85176E
+
+plugins:
+  - jekyll-seo-tag
 
 exclude:
   - .asset-cache
