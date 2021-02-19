@@ -25,9 +25,9 @@ layout: compress
                 </div>
 
                 {% if site.resume_looking_for_work == 'yes' %}
-                <a data="{{ site.resume_contact_email }}" class="contact-button no-print javascript-required" itemprop="email">Contact me</a>
+                <a rel="noopener" data="{{ site.resume_contact_email }}" class="contact-button no-print javascript-required" itemprop="email">Contact me</a>
                 {% elsif site.resume_looking_for_work == 'no' %}
-                <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+                <a rel="noopener" class="contact-button not-looking no-print">I'm not looking for work right now.</a>
                 {% else %}
                 {% endif %}
             </header>
@@ -80,7 +80,7 @@ layout: compress
                 {% for project in site.data.projects %}
                 <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
                     <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-                    <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
+                    <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a rel="noopener" href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
                     <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
                     <p class="resume-item-copy">{{ project.description }}</p>
                 </div>
@@ -111,7 +111,7 @@ layout: compress
 
                 {% for recognition in site.data.recognitions %}
                 <div class="resume-item">
-                    <h3 class="resume-item-title" itemprop="name">{% if recognition.url %}<a href="{{ recognition.url }}" itemprop="url">{{ recognition.award }}</a>{% else %}{{ recognition.award }}{% endif %}</h3>
+                    <h3 class="resume-item-title" itemprop="name">{% if recognition.url %}<a rel="noopener" href="{{ recognition.url }}" itemprop="url">{{ recognition.award }}</a>{% else %}{{ recognition.award }}{% endif %}</h3>
                     <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
                     <p class="resume-item-copy">{{ recognition.summary }}</p>
                 </div>
@@ -127,7 +127,7 @@ layout: compress
 
                 {% for association in site.data.associations %}
                 <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-                    <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
+                    <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a rel="noopener" href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
                     <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
                     <p class="resume-item-copy">{{ association.summary }}</p>
                 </div>
@@ -143,7 +143,7 @@ layout: compress
 
                 {% for credential in site.data.credentials %}
                 <div class="resume-item">
-                    <h4 class="resume-item-details" itemprop="award">{% if credential.url %}<a href="{{ credential.url }}">{{ credential.credentials }}</a>{% else %}{{ credential.credentials }}{% endif %}</h3>
+                    <h4 class="resume-item-details" itemprop="award">{% if credential.url %}<a rel="noopener" href="{{ credential.url }}">{{ credential.credentials }}</a>{% else %}{{ credential.credentials }}{% endif %}</h3>
                     <h4 class="resume-item-copy">{{ credential.organization }} &bull; {{ credential.year }}</h4>
                 </div>
                 {% endfor %}
@@ -191,7 +191,7 @@ layout: compress
                 <div class="resume-item">
                     <ul class="resume-item-list">
                         {% for link in site.data.links %}
-                        <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
+                        <li><a rel="noopener" href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>

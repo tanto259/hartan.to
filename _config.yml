@@ -1,6 +1,8 @@
 title: "Hartanto Ario Widjaya"
 description: "Student and Aspiring Mainframer"
 
+url: "https://hartan.to"
+
 markdown: kramdown
 sass:
   sass_dir: _sass
