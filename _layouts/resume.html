@@ -10,7 +10,11 @@ layout: compress
         
             <header class="page-header">
                 {% if site.resume.avatar %}
-                <img src="{{ '/images/avatar.jpg' | absolute_url }}" alt="my photo" class="avatar no-print" itemprop="image">
+                <picture>
+                    <source type="image/webp" srcset="{{ '/images/avatar.webp' | absolute_url }}">
+                    <source type="image/jpeg" srcset="{{ '/images/avatar.jpg' | absolute_url }}">
+                    <img src="{{ '/images/avatar.jpg' | absolute_url }}" alt="my photo" class="avatar no-print" itemprop="image">
+                </picture>
                 {% endif %}
                 
                 <h1 class="header-name" itemprop="name">{{ site.resume.name }}</h1>
