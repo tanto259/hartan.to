@@ -17,6 +17,14 @@ body{
   line-height: 1.5;
 }
 
+li {
+  margin-bottom: 8px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+
 .wrapper:before,
 .wrapper:after { content:""; display:table; }
 .wrapper:after { clear: both; }
