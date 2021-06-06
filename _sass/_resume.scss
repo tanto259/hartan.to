@@ -139,7 +139,7 @@
 
   .resume-item-title {
     @include sans_bold;
-    margin: 0 0 .75rem;
+    margin: 0 0 .35rem;
     font-size: 1.5rem;
     letter-spacing: -.05rem;
     line-height: 1.3;
@@ -147,7 +147,7 @@
 
   .resume-item-details {
     font-size: 1.125rem;
-    margin: 0 0 .75rem;
+    margin: 0 0 .5rem;
     line-height: 1.5;
 
     &.award-title {
@@ -171,7 +171,7 @@
     }
   }
 
-  .resume-item-copy { margin: .75rem 0 0; }
+  .resume-item-copy { margin: .5rem 0 0; }
 }
 
 // footer styles
