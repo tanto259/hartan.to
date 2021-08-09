@@ -139,6 +139,21 @@ layout: compress
             </section>
             {% endif %}
 
+            {% if site.resume_section.speaking %}
+            <section class="content-section">
+                <header class="section-header">
+                    <h2>Speaking Engagement</h2>
+                </header>
+
+                {% for speak in site.data.speaking %}
+                <div class="resume-item" itemscope itemprop="performerIn" itemtype="http://schema.org/Event">
+                    <h4 class="resume-item-details" itemprop="name">{% if speak.url %}<a rel="noopener" href="{{ speak.url }}">{{ speak.speaking }}</a>{% else %}{{ speak.speaking }}{% endif %}</h3>
+                    <h4 class="resume-item-copy" itemprop="description">{{ speak.organization }} &bull; {{ speak.year }}</h4>
+                </div>
+                {% endfor %}
+            </section>
+            {% endif %}
+
             {% if site.resume_section.credentials %}
             <section class="content-section">
                 <header class="section-header">

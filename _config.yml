@@ -24,6 +24,7 @@ resume_section:
   links:           true
   associations:    true
   credentials:     true
+  speaking:        true
   interests:       true
   language:        true
 
