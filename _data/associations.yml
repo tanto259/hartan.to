@@ -5,10 +5,16 @@
   url: https://www.ppisingapura.com/
   summary: Managing a team of 6 to maintain PPI Singapura's website and database, along with executing a census which to-date have increased PPI Singapura's membership by more than 300 people.
 
+- organization: SMU Ellipsis
+  role: Coders' Assembly Mentor
+  year: Sep 2020 &mdash; Present
+  url: https://ellipsis.sis.smu.edu.sg/
+  summary: Mentoring Computer Science freshmen with their journey into the introductory programming courses taught at SMU, which includes C and Java.
+
 - organization: IBM
   role: ZAmbassador
-  year: Jun 2020 &mdash; May 2021
-  url: https://zambassador.com/
+  year: Jun 2020 &mdash; Present
+  url: https://yourbigyear.com/z-ambassador-powered-by-ibm
   summary: Advocating for IBM Z Enterprise Computing System.
 
 - organization: zStudents Committee
@@ -16,9 +22,3 @@
   year: Oct 2020 &mdash; May 2021
   url: https://ibm.biz/studenthub
   summary: Creating accessible content that is for, with, and by students under the IBM Z Global Student Hub.
-
-- organization: SMU Ellipsis
-  role: Coders' Assembly Mentor
-  year: Sep 2020 &mdash; Apr 2021
-  url: https://ellipsis.sis.smu.edu.sg/
-  summary: Mentoring Computer Science freshmen with their journey into the introductory programming courses taught at SMU, which includes C and Java.
