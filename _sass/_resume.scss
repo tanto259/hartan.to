@@ -171,7 +171,15 @@
     }
   }
 
-  .resume-item-copy { margin: .5rem 0 0; }
+  .resume-item-copy { 
+    margin: .5rem 0 0;
+    font-weight: 400;
+  }
+}
+
+.list-section {
+  .resume-item-details { margin: 0 0 .35rem; }
+  .resume-item-copy { margin: .35rem 0 0; }
 }
 
 // footer styles

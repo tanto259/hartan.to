@@ -146,7 +146,7 @@ layout: compress
                 </header>
 
                 {% for speak in site.data.speaking %}
-                <div class="resume-item" itemscope itemprop="performerIn" itemtype="http://schema.org/Event">
+                <div class="resume-item list-section" itemscope itemprop="performerIn" itemtype="http://schema.org/Event">
                     <h4 class="resume-item-details" itemprop="name">{% if speak.url %}<a rel="noopener" href="{{ speak.url }}">{{ speak.speaking }}</a>{% else %}{{ speak.speaking }}{% endif %}</h3>
                     <h4 class="resume-item-copy" itemprop="description">{{ speak.organization }} &bull; {{ speak.year }}</h4>
                 </div>
@@ -161,7 +161,7 @@ layout: compress
                 </header>
 
                 {% for credential in site.data.credentials %}
-                <div class="resume-item">
+                <div class="resume-item list-section">
                     <h4 class="resume-item-details" itemprop="award">{% if credential.url %}<a rel="noopener" href="{{ credential.url }}">{{ credential.credentials }}</a>{% else %}{{ credential.credentials }}{% endif %}</h3>
                     <h4 class="resume-item-copy">{{ credential.organization }} &bull; {{ credential.year }}</h4>
                 </div>
