@@ -3,13 +3,19 @@
   role: Open Mainframe Project Ambassador
   year: Jan 2022 &mdash; Present
   url: https://www.openmainframeproject.org/ambassadors
-  summary: Advocating for open-source technologies in mainframe, and helping others learn about it.
+  summary: Advocating for open source technologies in mainframe, and helping others learn about it.
+
+- association: Open Mainframe Project Mentorship Program
+  role: COBOL Programming Course Mentor
+  year: Jun 2022 &mdash; Aug 2022
+  url: https://www.openmainframeproject.org/all-projects/mentorship-program
+  summary: Mentoring a student through open source contributions to the COBOL Programming Course.
 
 - organization: IBM
-  role: ZAmbassador
+  role: IBM zSystems Ambassador
   year: Jun 2020 &mdash; Dec 2021
   url: https://yourbigyear.com/z-ambassador-powered-by-ibm
-  summary: Advocating for IBM Z Enterprise Computing System, and providing technical support for others through their z/OS journey.
+  summary: Advocating for IBM zSystems among the student community, and providing technical support for others through their z/OS journey.
 
 - organization: SMU Ellipsis
   role: Coders' Assembly Mentor
