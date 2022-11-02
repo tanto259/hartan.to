@@ -28,11 +28,8 @@ layout: compress
                     {{ site.resume.intro }}
                 </div>
 
-                {% if site.resume.looking_for_work == 'yes' %}
-                <a rel="noopener" data="{{ site.resume.email }}" class="contact-button no-print javascript-required" itemprop="email">Contact me</a>
-                {% elsif site.resume.looking_for_work == 'no' %}
-                <a rel="noopener" class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-                {% else %}
+                {% if site.resume.contact == 'yes' %}
+                <a rel="noopener" href="https://securitypuppy.com/contact" class="contact-button no-print" itemprop="email">Contact me</a>
                 {% endif %}
             </header>
 
