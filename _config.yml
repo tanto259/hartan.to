@@ -1,5 +1,5 @@
 title:        Hartanto Ario Widjaya
-description:  Student and Mainframer
+description:  Mainframer
 url:          "https://hartan.to"
 
 markdown: kramdown
@@ -10,8 +10,8 @@ sass:
 resume:
   avatar:             true
   name:               Hartanto Ario Widjaya
-  title:              Student and Mainframer
-  intro:              "<p>I'm a student from Singapore who is looking to explore career options in mainframe. Why? Because they are fun to explore. In particular, I'm passionate about security, operations, and system programming on the mainframe!</p><p>I will be looking for full-time employment in Singapore when I conclude my undergraduate studies in January of 2023.</p><p>References available on request.</p>"
+  title:              Mainframer
+  intro:              "<p>I'm a system engineer from Singapore who is working with mainframes. Why? Because they are fun to explore :)</p>"
   contact:            "yes"
 
 resume_section:
