@@ -1,0 +1,41 @@
+{{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
+{{- $themeJS := resources.Get "js/theme.js" | minify | fingerprint -}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ .Site.Title }}</title>
+<meta name="description" content="{{ .Site.Params.intro | plainify }}">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+<link rel="icon" type="image/png" href="/favicon.png">
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Person",
+"name": "{{ .Site.Params.name }}",
+"jobTitle": "{{ .Site.Params.role }}",
+"description": "{{ .Site.Params.intro | plainify }}",
+"url": "{{ .Site.BaseURL }}",
+"image": "{{ .Site.BaseURL }}images/avatar.jpg"
+}
+</script>
+</head>
+<body>
+<main class="card">
+<button id="theme-toggle" type="button" aria-label="Toggle dark/light mode"><span class="theme-icon-sun" aria-hidden="true">☀</span><span class="theme-icon-moon" aria-hidden="true">☾</span></button>
+<img class="avatar" src="/images/avatar.webp" alt="Portrait of {{ .Site.Params.name }}" width="96" height="96">
+<h1>{{ .Site.Params.name }}</h1>
+<p class="role">{{ .Site.Params.role }}</p>
+<p class="intro">{{ .Site.Params.intro | plainify }}</p>
+<nav aria-label="Links">
+<ul>
+{{- range hugo.Data.links }}
+<li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a><span class="desc">{{ .desc }}</span></li>
+{{- end }}
+</ul>
+</nav>
+</main>
+<script src="{{ $themeJS.RelPermalink }}" integrity="{{ $themeJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
+</body>
+</html>

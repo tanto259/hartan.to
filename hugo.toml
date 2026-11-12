@@ -1,0 +1,13 @@
+baseURL = "https://hartan.to/"
+locale = "en-us"
+title = "Hartanto Ario Widjaya"
+
+disableKinds = ["taxonomy", "term", "rss"]
+
+[sitemap]
+  priority = 1.0
+
+[params]
+  name = "Hartanto Ario Widjaya"
+  role = "Mainframer"
+  intro = "I'm a system engineer from Singapore who is working with mainframes. Why? Because they are fun to explore :)"
