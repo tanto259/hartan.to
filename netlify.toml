@@ -1,9 +1,13 @@
+# Hartan.to - Netlify Configuration
+# Build
 [build]
+  publish = "public"
   command = "hugo --gc --minify"
 
 [build.environment]
   HUGO_VERSION = "0.169.0"
 
+# Redirects
 [[redirects]]
 from = "https://hartanto.netlify.com/*"
 to = "https://hartan.to/:splat"
@@ -28,6 +32,7 @@ to = "https://hartan.to/.well-known/security.txt"
 status = 301
 force = true
 
+# Headers
 [[headers]]
 for = "/*"
 [headers.values]
