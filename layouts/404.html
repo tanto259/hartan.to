@@ -1,0 +1,30 @@
+{{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
+{{- $themeJS := resources.Get "js/theme.js" | minify | fingerprint -}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Hartanto Ario Widjaya</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+<link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+<main class="card">
+<button id="theme-toggle" type="button" aria-label="Toggle dark/light mode"><svg class="theme-icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg><svg class="theme-icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+<h1>404</h1>
+<p class="role">Page not found</p>
+<p class="intro">The page you requested does not exist.</p>
+<nav aria-label="Links">
+<ul>
+<li><a href="/" target="_self" rel="noopener">Home</a><span class="desc">Back to the start.</span></li>
+{{- range hugo.Data.links }}
+<li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a><span class="desc">{{ .desc }}</span></li>
+{{- end }}
+</ul>
+</nav>
+</main>
+<script src="{{ $themeJS.RelPermalink }}" integrity="{{ $themeJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
+</body>
+</html>
